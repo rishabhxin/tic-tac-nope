@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fdfbf7" />
+  <title>tic · tac · nope</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-blob blob-1" aria-hidden="true"></div>
+  <div class="bg-blob blob-2" aria-hidden="true"></div>
+  <div class="bg-blob blob-3" aria-hidden="true"></div>
+
+  <main class="app">
+    <header class="header">
+      <h1>tic · tac · nope</h1>
+      <p class="status-pill" id="statusPill">Your turn</p>
+    </header>
+
+    <section class="board-card" id="boardCard">
+      <div class="board" id="board" role="group" aria-label="Tic tac toe board"></div>
+    </section>
+
+    <footer class="controls">
+      <div class="scores" aria-label="Scoreboard">
+        <span class="score-chip">You <b id="wins">0</b></span>
+        <span class="score-chip">Bot <b id="losses">0</b></span>
+      </div>
+      <button class="play-btn" id="playAgain" type="button">Play again</button>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
